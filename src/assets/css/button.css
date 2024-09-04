@@ -1,0 +1,27 @@
+.btn{
+    @apply h-[32px] inline-flex px-[27px] items-center  justify-center whitespace-nowrap
+}
+
+
+.btn-amber-black{
+    @apply bg-amber-black text-white
+}
+
+.btn-sky-blue{
+    @apply bg-sky-blue text-white 
+}
+
+.btn-science-blue{
+    @apply bg-science-blue text-white
+}
+.btn-rounded{
+    @apply rounded-[4px]
+}
+
+.btn-rounded-full{
+    @apply rounded-full
+}
+
+.btn-lg{
+    @apply h-[38px]
+}

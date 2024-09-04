@@ -1,0 +1,132 @@
+body {
+    @apply bg-[#F4F9F8] text-amber-black
+}
+
+.layout {
+    @apply grid grid-cols-[260px_calc(100%-665px)_285px] gap-[45px]
+}
+
+.layout_left {
+
+    .left_fixed {
+        @apply fixed w-[260px]
+    }
+
+    .logo {
+        @apply py-[20px] px-[30px] text-[15px];
+
+
+        a {
+            @apply flex items-center space-x-[15px] text-[18px] font-bold text-science-blue
+        }
+
+    }
+
+    .navbar {
+        @apply pr-[17px];
+
+        .navlink {
+            @apply flex items-center h-[50px] pl-[33px];
+
+            i {
+                @apply text-[24px] mr-[22px]
+            }
+
+            &.active {
+                @apply bg-sky-blue/10 rounded-r-full text-sky-blue font-bold relative before:content-[''] before:size-[6px] before:bg-sky-blue before:rounded-full before:absolute before:left-[15px]
+            }
+        }
+    }
+
+}
+
+
+
+.category {
+    @apply mt-[22px] flex gap-x-[10px] whitespace-nowrap overflow-x-auto;
+
+    .category_item {
+        @apply h-[30px] inline-flex items-center px-[17px] bg-white rounded-full;
+
+        &.active {
+            @apply bg-sky-blue text-white
+        }
+    }
+}
+
+
+
+.news_item {
+    @apply bg-white p-[17px] shadow-theme rounded-[4px];
+
+
+    .top {
+        @apply flex gap-x-[18px]
+    }
+
+    .title {
+        @apply text-[17px] leading-[24px] font-semibold
+    }
+
+
+    .text {
+        @apply text-amber-black/60 mt-[9px] text-[14px] leading-[22px] line-clamp-3
+    }
+
+    .photo {
+        @apply aspect-square h-[132px] rounded-[4px] overflow-hidden shrink-0;
+
+        img {
+            @apply size-full object-cover
+        }
+    }
+
+    .bottom {
+        @apply flex items-center justify-between mt-[8px]
+    }
+
+    .info {
+        @apply text-amber-black/40 flex items-center gap-[10px];
+
+        .dot {
+            @apply text-[2px] text-sky-blue/40
+        }
+    }
+
+
+
+    .button {
+        @apply text-[#0768B5] flex items-center gap-[25px] text-[12px] leading-[22px]
+    }
+}
+
+
+
+
+.layout_right {
+
+
+    .right_fixed {
+        @apply fixed w-[285px]
+    }
+
+
+
+    .box {
+        @apply bg-white shadow-theme p-[15px] ;
+
+
+
+        .head {
+            @apply flex items-center justify-between text-[15px] leading-[17px] mb-[7px]
+        }
+
+        .body {
+            @apply text-[15px] leading-[17px] flex items-center justify-between mt-[15px];
+
+            .celc {
+                @apply font-bold text-[26px] leading-[30px] mt-[7px]
+            }
+        }
+    }
+}
